@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDN Poris Pelawad 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav class="navbar">
+                <div class="logo-container">
+                    <img src="e:/xampp/htdocs/BERANDA 2/Logo sekolah.png" 
+                         alt="Logo SDN Poris Pelawad 6" class="logo-img">
+                    <span class="logo-text">SDN PORIS PELAWAD 6</span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="Beranda.html">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Profil</a>
+                        <div class="dropdown-content">
+                            <a href="Sejarah Sekolah.html">Sejarah Singkat</a>
+                            <a href="Visi dan Misi.html">Visi & Misi</a>
+                            <a href="guru dan tendik.html">Guru & Tendik</a>
+                            <a href="#">Sarana & Prasana</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Kesiswaan</a>
+                        <div class="dropdown-content">
+                            <a href="#">Kegiatan</a>
+                            <a href="#">Tata Tertib</a>
+                            <a href="#">Ekstrakurikuler</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Adiwiyata</a>
+                        <div class="dropdown-content">
+                            <a href="#">Sejarah Adiwiyata</a>
+                            <a href="#">Visi & Misi Adiwiyata</a>
+                            <a href="#">Struktur Adiwiyata</a>
+                            <a href="#">Program Adiwiyata</a>
+                            <a href="#">Dokumentasi</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Prestasi</a>
+                        <div class="dropdown-content">
+                            <a href="#">Prestasi Sekolah</a>
+                            <a href="#">Prestasi Guru</a>
+                            <a href="#">Prestasi Murid</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Informasi</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <p><strong>SDN NEGERI PORIS PELAWAD 6</strong></p>
+        <p>Jl. Panglima Polim Pelawad No.Rt 002/002, RR.005/RW.002, 
+           Poris Pelawad Utara, Kec. Cipondoh, Kota Tangerang, Banten 15141</p>
+        <p>Email: anisaamelia@gail.com | Instagram: @sdnporispelawad6</p>
+        <p>&copy; 2024 UPT SDN PORIS PELAWAD 6</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('#nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
