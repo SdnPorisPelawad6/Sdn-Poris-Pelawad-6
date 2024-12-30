@@ -113,7 +113,7 @@ body {
     }
     /* Hero Section */
     .hero {
-            background: url('img/Tata Tertib.png') center/cover no-repeat;
+            background: url('imG/tatatertibb.png') center/cover no-repeat;
             position: relative;
             height: 400px;
             display: flex;
@@ -512,6 +512,18 @@ footer {
         </footer>
 
     <script>
+        let currentImageIndex = 0;
+    const images = ["img/tatatertibb.png", "img/tatatertibbb.png",]; // Tambahkan path gambar lainnya
+
+    // Function untuk mengganti background
+    function changeBackground() {
+        document.querySelector(".hero").style.backgroundImage = `url(${images[currentImageIndex]})`;
+        currentImageIndex = (currentImageIndex + 1) % images.length; // Loop kembali ke gambar pertama
+    }
+
+    // Set interval untuk pergantian background (misal, 5 detik)
+    setInterval(changeBackground, 4000);
+
         // Gambar dan hari-hari untuk slideshow
         const slides = [
             { src: 'img/MERAH PUTIH.png', day: 'PUTIH MERAH' },
